@@ -8,12 +8,10 @@ def multiple(m):
 def oem():
     firstPart = str(random.randint(1, 366)) + str(random.randint(95, 99))
     thirdPart = random.randint(100000, 999999)
-    sumAll = 0
     sumAll = thirdPart
 
-    if not multiple(sumAll):
+    while not multiple(sumAll):
         thirdPart = random.randint(100000, 999999)
-        sumAll = 0
         sumAll = thirdPart
 
     lastPart = str(random.randint(10000, 99999))
