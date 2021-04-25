@@ -12,12 +12,10 @@ def office97():
     firstPart = ''.join(str(num) for num in firstPartlist)
 
     lastPart = random.randint(1000000, 9999999)
-    sumAll = 0
     sumAll = lastPart
 
-    if not multiple(sumAll):
+    while not multiple(sumAll):
         lastPart = random.randint(1000000, 9999999)
-        sumAll = 0
         sumAll = lastPart
 
     return firstPart + "-" + str(lastPart)
