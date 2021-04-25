@@ -14,12 +14,10 @@ def cd():
             firstPart = random.randint(100, 998)
 
     lastPart = random.randint(1000000, 9999999)
-    sumAll = 0
     sumAll = lastPart
 
-    if not multiple(sumAll):
+    while not multiple(sumAll):
         lastPart = random.randint(1000000, 9999999)
-        sumAll = 0
         sumAll = lastPart
 
     return str(firstPart) + "-" + str(lastPart)
